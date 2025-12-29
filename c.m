@@ -1,4 +1,4 @@
-function [A, t, d0, lsqe, r, v0, x] = c(d, dt)
+function [A, d0, lsqe, r, t, v0, x] = c(d, dt)
 t = (0:dt:2)';
 A = [ 0.5 * t .^ 2, t, ones( size(t) ) ];
 

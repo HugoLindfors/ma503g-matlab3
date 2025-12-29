@@ -12,7 +12,7 @@ r = d - A * x;
 lsqe = norm(r);
 
 fprintf('Gravity on Mars: %.4f m/s^2\n', g);
-fprintf('Least squares error (norm of r): %.4f\n', norm(r) );
+fprintf('Least squares error (norm of r): %.4f\n', lsqe );
 
 T = linspace(0, 2, 100)';
 D = 0.5 * g * T .^ 2 + v0 * T + d0;
